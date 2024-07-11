@@ -21,9 +21,7 @@ import org.junit.jupiter.api.TestInfo;
 
 import java.nio.file.Paths;
 
-/**
- * @author tahanima
- */
+
 @Feature("Login Test")
 public class LoginTest extends BaseTest {
 

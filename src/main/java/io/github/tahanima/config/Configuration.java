@@ -4,9 +4,7 @@ import org.aeonbits.owner.Config;
 import org.aeonbits.owner.Config.LoadPolicy;
 import org.aeonbits.owner.Config.Sources;
 
-/**
- * @author tahanima
- */
+
 @LoadPolicy(Config.LoadType.MERGE)
 @Sources({"system:properties", "classpath:config.properties", "classpath:allure.properties"})
 public interface Configuration extends Config {

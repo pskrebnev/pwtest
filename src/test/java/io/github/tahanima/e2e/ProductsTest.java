@@ -19,9 +19,7 @@ import org.junit.jupiter.api.TestInfo;
 
 import java.nio.file.Paths;
 
-/**
- * @author tahanima
- */
+
 @Feature("Products Test")
 public class ProductsTest extends BaseTest {
 

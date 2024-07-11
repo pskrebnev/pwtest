@@ -7,9 +7,7 @@ import io.github.tahanima.ui.component.Header;
 import io.github.tahanima.ui.component.SideNavMenu;
 import io.qameta.allure.Step;
 
-/**
- * @author tahanima
- */
+
 public final class ProductsPage extends BasePage {
 
     private Header header;

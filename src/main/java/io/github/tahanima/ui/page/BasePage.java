@@ -6,9 +6,7 @@ import com.microsoft.playwright.Page;
 
 import io.qameta.allure.Step;
 
-/**
- * @author tahanima
- */
+
 public abstract class BasePage {
 
     protected Page page;

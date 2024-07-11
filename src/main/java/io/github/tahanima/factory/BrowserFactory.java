@@ -7,9 +7,7 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.BrowserType.LaunchOptions;
 import com.microsoft.playwright.Playwright;
 
-/**
- * @author tahanima
- */
+
 public enum BrowserFactory {
 
     CHROMIUM {

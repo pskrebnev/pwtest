@@ -5,9 +5,7 @@ import com.univocity.parsers.annotations.Parsed;
 import lombok.Getter;
 import lombok.ToString;
 
-/**
- * @author tahanima
- */
+
 @Getter
 @ToString(callSuper = true)
 public class LoginDto extends BaseDto {

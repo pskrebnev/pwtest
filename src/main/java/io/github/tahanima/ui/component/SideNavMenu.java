@@ -2,9 +2,7 @@ package io.github.tahanima.ui.component;
 
 import com.microsoft.playwright.Page;
 
-/**
- * @author tahanima
- */
+
 public final class SideNavMenu extends BaseComponent {
 
     public SideNavMenu(final Page page) {

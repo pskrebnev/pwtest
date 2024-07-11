@@ -7,9 +7,7 @@ import com.microsoft.playwright.Locator;
 import io.github.tahanima.factory.BasePageFactory;
 import io.qameta.allure.Step;
 
-/**
- * @author tahanima
- */
+
 public final class LoginPage extends BasePage {
 
     @Step("Navigate to the login page")

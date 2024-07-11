@@ -24,9 +24,7 @@ import org.junit.jupiter.api.extension.RegisterExtension;
 
 import java.util.Optional;
 
-/**
- * @author tahanima
- */
+
 @TestInstance(Lifecycle.PER_CLASS)
 public abstract class BaseTest {
 

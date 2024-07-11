@@ -12,9 +12,7 @@ import org.junit.jupiter.params.support.AnnotationConsumer;
 
 import java.util.stream.Stream;
 
-/**
- * @author tahanima
- */
+
 public class DataArgumentsProvider implements ArgumentsProvider, AnnotationConsumer<DataSource> {
 
     private String id;

@@ -7,9 +7,7 @@ import com.microsoft.playwright.Playwright;
 
 import io.github.tahanima.factory.BrowserFactory;
 
-/**
- * @author tahanima
- */
+
 public final class BrowserManager {
 
     private BrowserManager() {}
