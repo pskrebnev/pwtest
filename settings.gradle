@@ -1,2 +1,3 @@
-rootProject.name = 'playwright-java-test-automation-architecture'
+//rootProject.name = 'playwright-java-test-automation-architecture'
+rootProject.name = 'pwtest project'
 
