@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '2.11.2'
+}
+
+group 'io.github.tahanima'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.aeonbits.owner:owner:1.0.12'
+    implementation 'com.univocity:univocity-parsers:2.9.1'
+    implementation 'com.microsoft.playwright:playwright:1.43.0'
+    implementation 'org.apache.commons:commons-lang3:3.14.0'
+    implementation 'org.slf4j:slf4j-api:2.0.13'
+    implementation 'io.qameta.allure:allure-junit-platform:2.27.0'
+    implementation 'com.github.automatedowl:allure-environment-writer:1.0.0'
+
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
+    testCompileOnly 'org.projectlombok:lombok:1.18.32'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.32'
+
+    testImplementation platform('org.junit:junit-bom:5.10.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'io.github.artsok:rerunner-jupiter:2.1.6'
+    testImplementation 'org.slf4j:slf4j-simple:2.0.13'
+}
+
+test {
+    systemProperties = System.getProperties() as Map<String, ?>
+    def group = System.getProperty('group', 'regression')
+
+    useJUnitPlatform() {
+        includeTags group
+    }
+}
+
+tasks.register('playwright', JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.microsoft.playwright.CLI'
+}
